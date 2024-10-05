@@ -52,6 +52,33 @@ A WooCommerce plugin that integrates **M-Pesa** and **PayPal** as payment option
 
 - **Encrypted API Credentials**: All M-Pesa and PayPal API credentials are securely encrypted in the database.
 - **Nonce & CSRF Protection**: Nonce verification is added to all form submissions to prevent CSRF attacks.
+- **Input Sanitization**: All inputs, including API keys and user data, are sanitized and validated before saving.
+- **Webhook Security**: Webhook endpoints for payment notifications are protected and verified.
+  
+## Usage
+
+After configuring the plugin:
+- Your customers will see **M-Pesa** and **PayPal** as payment options during checkout.
+- Upon successful payment, orders will automatically update in WooCommerce with the correct status.
+
+## Security Notes
+
+- Ensure your website uses **HTTPS** for secure API communication.
+- Disable debugging (`WP_DEBUG`) in production environments to avoid exposing sensitive information.
+
+## Contributing
+
+Feel free to submit issues, feature requests, or pull requests to improve this plugin. Contributions are always welcome!
+
+1. Fork this repository.
+2. Create a new branch for your feature or fix: `git checkout -b my-new-feature`.
+3. Commit your changes: `git commit -am 'Add some feature'`.
+4. Push to the branch: `git push origin my-new-feature`.
+5. Create a pull request.
+
+## Author
+
+- [Elvin Obongo](https://github.com/Obongo)
 
 ## License
 
